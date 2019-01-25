@@ -1,0 +1,15 @@
+# % macro, __doc__, Simple template writes an arbitrary string to the PMAC
+# % macro, P, Pv Prefix
+# % macro, Q, Pv Suffix
+# % macro, PORT, Motor controller serial port
+# % macro, ADDR, Asyn port address
+
+##########################################
+# Records for writing to PMAC variables
+########################################## 
+
+record(asyn, "$(PMAC)$(ASYN)") {
+  field(DESC, "$(DESC="Asyn interface to PMAC")")
+  field(PORT, "$(PORT)")
+  field(ADDR, "$(ADDR=0)")
+}

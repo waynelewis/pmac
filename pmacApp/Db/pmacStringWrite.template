@@ -1,0 +1,15 @@
+# % macro, __doc__, Simple template writes an arbitrary string to the PMAC
+# % macro, P, PV prefix
+# % macro, Q, PV suffix
+# % macro, PMAC, PMAC asyn port PV prefix
+# % macro, ASYN, PMAC asyn port PV suffix
+
+##########################################
+# Records for writing to PMAC variables
+########################################## 
+
+record(stringout, "$(P)$(Q):SET") {
+  field(VAL,  "$(STRING_CMD)")
+  field(DESC, "Write value to pmac")
+  field(OUT, "$(PMAC)$(ASYN).AOUT PP")
+}
