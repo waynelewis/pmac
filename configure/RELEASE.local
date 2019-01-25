@@ -6,9 +6,13 @@
 # WORK            = /dls_sw/work/R3.14.12.7/support
 # EPICS_BASE      = /dls_sw/epics/R3.14.12.7/base
 
-ASYN=       $(SUPPORT)/asyn/4-33
-CALC=       $(SUPPORT)/calc/3-7
-MOTOR=      $(SUPPORT)/motor/6-10-1dls1
-BUSY=       $(SUPPORT)/busy/1-7
+#ASYN=       $(SUPPORT)/asyn/4-33
+#CALC=       $(SUPPORT)/calc/3-7
+#MOTOR=      $(SUPPORT)/motor/6-10-1dls1
+#BUSY=       $(SUPPORT)/busy/1-7
+ASYN=       $(SUPPORT)/asyn4-30
+CALC=       $(SUPPORT)/calc-3-4-2-1
+MOTOR=      $(SUPPORT)/motor-6-9
+BUSY=       $(SUPPORT)/busy-1-6-1
 
 
